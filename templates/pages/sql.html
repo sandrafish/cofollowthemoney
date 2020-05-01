@@ -1,0 +1,21 @@
+
+{% extends "base.html" %}
+{% block content %}
+<h1>{{ metadata.title or "FollowtheMoneyCO" }}</h1>
+<p>FollowtheMoneyCO is a joint project of the media collaborative COLab and the Colorado Sun, funded by the Colorado Media Project and the Colorado Sun.</p>
+
+<p>The project aims to make Colorado campaign finance data more accessible to journalists and the public using downloadable data from the Colorado Secretary of State’s TRACER. </p>
+
+<p>Here's how it works. First select a column such as city.</p>
+
+<p>Then select an operator. The = will match exactly, the != will get everything that doesn't match exactly. Contains, ends with or starts with may be the most valuable operaters, especially with names. Use the more than, less than, etc. on contribution amounts.</p>
+
+<p>Select a search term in the third column. This column is case sensitive, so searching for denver will return nothing. While Denver will return results.</p>
+
+<p>You may search by multiple columns, such as committee names and amounts over 10,000.</p>
+
+<p>Search results may be downloaded as a CSV (best for using a spreadsheet) or json file. If you're saving as a CSV, it's best to go to the "advanced" export and click on "download file."</p>
+
+<p>Questions? Suggestions? email fish(at)coloradomediaproject.com</p>
+
+{% endblock %}
